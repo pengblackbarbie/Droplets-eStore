@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women's Collection - Droplets</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="Droplets Logo" />
+        <span class="brand-name">Droplets</span>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li class="nav-icon cart-icon">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cartCount" class="cart-count">0</span>
+            </a>
+          </li>
+          <li class="nav-icon user-icon">
+            <a href="#">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section-title">Women's Collection</h1>
+
+    <!-- Section Template -->
+    <section class="product-category">
+      <h2>T-Shirts</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <a href="product.html?id=tee001" class="product-link">
+            <img src="images/W-tee1.jpg" alt="T-Shirt 1" />
+            <h3>White Tee</h3>
+            <p>$25</p>
+          </a>
+          <button
+            class="add-to-cart-btn"
+            data-id="tee001"
+            data-name="White Tee"
+            data-price="25">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <a href="product.html?id=tee002" class="product-link">
+            <img src="images/W-tee2.jpg" alt="T-Shirt 2" />
+            <h3>Black Tee</h3>
+            <p>$28</p>
+          </a>
+          <button class="add-to-cart-btn" data-product-id="tee002">Add to Cart</button>
+           <button
+            class="add-to-cart-btn"
+            data-id="tee001"
+            data-name="White Tee"
+            data-price="25">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <a href="product.html?id=tee003" class="product-link">
+            <img src="images/W-tee3.jpg" alt="T-Shirt 3" />
+            <h3>Graphic Tee</h3>
+            <p>$30</p>
+          </a>
+          <button class="add-to-cart-btn" data-product-id="tee003">Add to Cart</button>
+           <button
+            class="add-to-cart-btn"
+            data-id="tee001"
+            data-name="White Tee"
+            data-price="25">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <a href="product.html?id=tee004" class="product-link">
+            <img src="images/W-tee4.jpg" alt="T-Shirt 4" />
+            <h3>Cropped Tee</h3>
+            <p>$27</p>
+          </a>
+          <button class="add-to-cart-btn" data-product-id="tee004">Add to Cart</button>
+           <button
+            class="add-to-cart-btn"
+            data-id="tee001"
+            data-name="White Tee"
+            data-price="25">Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Repeat same structure for other categories -->
+
+    <section class="product-category">
+      <h2>Skirts</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <a href="product.html?id=skirt001" class="product-link">
+            <img src="images/W-skirt1.jpg" alt="Skirt 1" />
+            <h3>Mini Skirt</h3>
+            <p>$32</p>
+          </a>
+          <button class="add-to-cart-btn" data-product-id="skirt001">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <a href="product.html?id=skirt002" class="product-link">
+            <img src="images/W-skirt2.jpg" alt="Skirt 2" />
+            <h3>Denim Skirt</h3>
+            <p>$35</p>
+          </a>
+          <button class="add-to-cart-btn" data-product-id="skirt002">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <a href="product.html?id=skirt003" class="product-link">
+            <img src="images/W-skirt3.jpg" alt="Skirt 3" />
+            <h3>Floral Skirt</h3>
+            <p>$29</p>
+          </a>
+          <button class="add-to-cart-btn" data-product-id="skirt003">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <a href="product.html?id=skirt004" class="product-link">
+            <img src="images/W-skirt4.jpg" alt="Skirt 4" />
+            <h3>Pleated Skirt</h3>
+            <p>$34</p>
+          </a>
+          <button class="add-to-cart-btn" data-product-id="skirt004">Add to Cart</button>
+        </div>
+
+      </div>
+    </section>
+
+     <section class="product-category">
+      <h2>Dresses</h2>
+      <div class="product-grid">
+        <a href="product.html?id=dress001" class="product-card">
+          <img src="images/W-dress1.jpg" alt="Dress 1" />
+          <h3>Sundress</h3>
+          <p>$40</p>
+        </a>
+        <a href="product.html?id=dress002" class="product-card">
+          <img src="images/W-dress2.jpg" alt="Dress 2" />
+          <h3>Maxi Dress</h3>
+          <p>$45</p>
+        </a>
+        <a href="product.html?id=dress003" class="product-card">
+          <img src="images/W-dress3.jpg" alt="Dress 3" />
+          <h3>Bodycon Dress</h3>
+          <p>$42</p>
+        </a>
+        <a href="product.html?id=dress004" class="product-card">
+          <img src="images/W-dress4.jpg" alt="Dress 4" />
+          <h3>Slip Dress</h3>
+          <p>$38</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="product-category">
+      <h2>Crop Tops</h2>
+      <div class="product-grid">
+        <a href="product.html?id=crop001" class="product-card">
+          <img src="images/W-crop1.jpg" alt="Crop Top 1" />
+          <h3>Basic Crop</h3>
+          <p>$22</p>
+        </a>
+        <a href="product.html?id=crop002" class="product-card">
+          <img src="images/W-crop2.jpg" alt="Crop Top 2" />
+          <h3>Graphic Crop</h3>
+          <p>$26</p>
+        </a>
+        <a href="product.html?id=crop003" class="product-card">
+          <img src="images/W-crop3.jpg" alt="Crop Top 3" />
+          <h3>Wrap Crop</h3>
+          <p>$24</p>
+        </a>
+        <a href="product.html?id=crop004" class="product-card">
+          <img src="images/W-crop4.jpg" alt="Crop Top 4" />
+          <h3>One-Shoulder</h3>
+          <p>$28</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="product-category">
+      <h2>Jeans</h2>
+      <div class="product-grid">
+        <a href="product.html?id=jean001" class="product-card">
+          <img src="images/W-jean1.jpg" alt="Jeans 1" />
+          <h3>Straight Jeans</h3>
+          <p>$48</p>
+        </a>
+        <a href="product.html?id=jean002" class="product-card">
+          <img src="images/W-jean2.jpg" alt="Jeans 2" />
+          <h3>Mom Jeans</h3>
+          <p>$50</p>
+        </a>
+        <a href="product.html?id=jean003" class="product-card">
+          <img src="images/W-jean3.jpg" alt="Jeans 3" />
+          <h3>Wide-Leg Jeans</h3>
+          <p>$52</p>
+        </a>
+        <a href="product.html?id=jean004" class="product-card">
+          <img src="images/W-jean4.jpg" alt="Jeans 4" />
+          <h3>Skinny Jeans</h3>
+          <p>$46</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="product-category">
+      <h2>Shorts</h2>
+      <div class="product-grid">
+        <a href="product.html?id=short001" class="product-card">
+          <img src="images/W-short1.jpg" alt="Shorts 1" />
+          <h3>Denim Shorts</h3>
+          <p>$30</p>
+        </a>
+        <a href="product.html?id=short002" class="product-card">
+          <img src="images/W-short2.jpg" alt="Shorts 2" />
+          <h3>High-Waist Shorts</h3>
+          <p>$32</p>
+        </a>
+        <a href="product.html?id=short003" class="product-card">
+          <img src="images/W-short3.jpg" alt="Shorts 3" />
+          <h3>Cotton Shorts</h3>
+          <p>$28</p>
+        </a>
+        <a href="product.html?id=short004" class="product-card">
+          <img src="images/women/shorts/short4.jpg" alt="Shorts 4" />
+          <h3>Bermuda Shorts</h3>
+          <p>$34</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-columns container">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Womens</a></li>
+          <li><a href="#">Mens</a></li>
+          <li><a href="#">Footwear</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">© 2025 Droplets. All rights reserved.</p>
+  </footer>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.site-nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !expanded);
+  });
+
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  function updateCartCount() {
+    const count = cart.reduce((total, item) => total + item.quantity, 0);
+    const cartCount = document.querySelector(".cart-count");
+    if (cartCount) cartCount.textContent = count;
+  }
+
+  function addToCart(product) {
+    const existing = cart.find(item => item.id === product.id);
+    if (existing) {
+      existing.quantity += 1;
+    } else {
+      cart.push({ ...product, quantity: 1 });
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+  }
+
+  document.querySelectorAll(".add-to-cart-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const product = {
+        id: btn.dataset.id,
+        name: btn.dataset.name,
+        price: parseFloat(btn.dataset.price)
+      };
+      addToCart(product);
+    });
+  });
+
+  // Initialize cart count on load
+  updateCartCount();
+</script>
+
+</body>
+</html>
