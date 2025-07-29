@@ -4,8 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Droplets eStore</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header -->
@@ -20,10 +26,17 @@
       </div>
       <nav class="site-nav" id="siteNav">
         <ul>
-          <li><a href="#">Womens</a></li>
-          <li><a href="#">Mens</a></li>
-          <li><a href="#">Footwear</a></li>
-          <li><a href="#">Accessories</a></li>
+          <li class="nav-icon cart-icon">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cartCount" class="cart-count">0</span>
+            </a>
+          </li>
+          <li class="nav-icon user-icon">
+            <a href="#">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -38,21 +51,21 @@
     </div>
   </section>
 
-  <!-- Categories -->
+  <!-- Categories Section remains as is -->
   <section class="categories container">
     <h2 class="section-title">Categories</h2>
     <div class="grid-4">
       <div class="cat-box">
-        <a href="#"><img src="images/cat1.jpg" alt="Womens" /><span>Womens</span></a>
+        <a href="#"><img src="images/hero4.jpg" alt="Womens" /><span>Womens</span></a>
       </div>
       <div class="cat-box">
-        <a href="#"><img src="images/cat2.jpg" alt="Mens" /><span>Mens</span></a>
+        <a href="#"><img src="images/hero3.jpg" alt="Mens" /><span>Mens</span></a>
       </div>
       <div class="cat-box">
-        <a href="#"><img src="images/cat3.jpg" alt="Footwear" /><span>Footwear</span></a>
+        <a href="#"><img src="images/footwear.jpg" alt="Footwear" /><span>Footwear</span></a>
       </div>
       <div class="cat-box">
-        <a href="#"><img src="images/cat4.jpg" alt="Accessories" /><span>Accessories</span></a>
+        <a href="#"><img src="images/accessories.jpg" alt="Accessories" /><span>Accessories</span></a>
       </div>
     </div>
   </section>
@@ -75,6 +88,11 @@
         <img src="images/prod3.jpg" alt="Product 3" />
         <h3>Sneakers</h3>
         <p>$80</p>
+      </div>
+      <div class="product-card">
+        <img src="images/prod4.jpg" alt="Product 4" />
+        <h3>Jeans</h3>
+        <p>$50</p>
       </div>
     </div>
   </section>
@@ -114,6 +132,13 @@
     const hamburger = document.getElementById('hamburger');
     const siteNav = document.getElementById('siteNav');
     hamburger.onclick = () => siteNav.classList.toggle('active');
+
+    // Example cart count update (replace with real logic)
+    function updateCartCount(count) {
+      document.getElementById('cartCount').textContent = count;
+    }
+    // Demo update
+    setTimeout(() => updateCartCount(0), 2000);
   </script>
 </body>
 </html>
