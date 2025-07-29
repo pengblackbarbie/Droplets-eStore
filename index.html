@@ -2,154 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DROPLETS - Streetwear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Droplets eStore</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!---HEADER-->
- <header class="site-header">
-  <div class="container">
-    <div class="logo">
-      <img src="images/logo.jpeg" alt="Droplets Logo" />
-      <span class="logo-text">Droplets</span>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="Droplets Logo" />
+        <span class="brand-name">Droplets</span>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <nav class="site-nav" id="siteNav">
+        <ul>
+          <li><a href="#">Womens</a></li>
+          <li><a href="#">Mens</a></li>
+          <li><a href="#">Footwear</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <nav class="site-nav" id="siteNav">
-      <ul>
-        <li><a href="#">Womens</a></li>
-        <li><a href="#">Mens</a></li>
-        <li><a href="#">Footwear</a></li>
-        <li><a href="#">Accessories</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-
-
-  <!-- Hero Banner -->
-  <section class="hero">
-    <div class="hero-text fade-in">
-      <h1>New Season. New Drops.</h1>
-      <a href="#" class="btn-primary">Shop Now</a>
+  <!-- Hero Minimal -->
+  <section class="hero-minimal">
+    <div class="hero-content">
+      <h1>Essential Streetwear.</h1>
+      <p>Minimal cuts. Maximum comfort. Built for the bold.</p>
+      <a href="#" class="btn-primary">Shop Collection</a>
     </div>
   </section>
 
   <!-- Categories -->
-  <section class="categories">
-    <div class="container grid-4">
-      <div class="cat-box fade-in">
-        <a href="#">
-          <img src="images/hero1.jpg" alt="Womens">
-          <span>Womens</span>
-        </a>
+  <section class="categories container">
+    <h2 class="section-title">Categories</h2>
+    <div class="grid-4">
+      <div class="cat-box">
+        <a href="#"><img src="images/cat1.jpg" alt="Womens" /><span>Womens</span></a>
       </div>
-      <div class="cat-box fade-in">
-        <a href="#">
-          <img src="images/hero2.jpg" alt="Mens">
-          <span>Mens</span>
-        </a>
+      <div class="cat-box">
+        <a href="#"><img src="images/cat2.jpg" alt="Mens" /><span>Mens</span></a>
       </div>
-      <div class="cat-box fade-in">
-        <a href="#">
-          <img src="images/footwear.jpg" alt="Footwear">
-          <span>Footwear</span>
-        </a>
+      <div class="cat-box">
+        <a href="#"><img src="images/cat3.jpg" alt="Footwear" /><span>Footwear</span></a>
       </div>
-      <div class="cat-box fade-in">
-        <a href="#">
-          <img src="images/accessories.jpg" alt="Accessories">
-          <span>Accessories</span>
-        </a>
+      <div class="cat-box">
+        <a href="#"><img src="images/cat4.jpg" alt="Accessories" /><span>Accessories</span></a>
       </div>
     </div>
   </section>
 
   <!-- New Arrivals -->
-  <section class="new-arrivals">
-    <div class="container">
-      <h2>New Arrivals</h2>
-      <div class="product-grid">
-        <div class="product-card fade-in">
-          <img src="images/W-tee1.jpg" alt="Oversized Tee">
-          <h3>Oversized Tee</h3>
-          <p>R120</p>
-        </div>
-        <div class="product-card fade-in">
-          <img src="images/W-jean1.jpg" alt="Cargo Pants">
-          <h3>Cargo Pants</h3>
-          <p>R300</p>
-        </div>
-        <div class="product-card fade-in">
-          <img src="images/W-dress5.jpg" alt="Maxi Dress">
-          <h3>Maxi Dress</h3>
-          <p>R250</p>
-        </div>
-        <div class="product-card fade-in">
-          <img src="images/W-crop1.jpg" alt="Crop Tee">
-          <h3>Y2k Crop</h3>
-          <p>R120</p>
-        </div>
-        <!-- Add more as needed -->
+  <section class="new-arrivals container">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/prod1.jpg" alt="Product 1" />
+        <h3>Graphic Tee</h3>
+        <p>$35</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Lifestyle Banner -->
-  <section class="lifestyle">
-    <div class="lifestyle-content fade-in">
-      <h2>Built for the Streets</h2>
-      <p>Minimal cuts. Elevated fabric. Everyday silhouettes with bold intention.</p>
+      <div class="product-card">
+        <img src="images/prod2.jpg" alt="Product 2" />
+        <h3>Cropped Hoodie</h3>
+        <p>$50</p>
+      </div>
+      <div class="product-card">
+        <img src="images/prod3.jpg" alt="Product 3" />
+        <h3>Sneakers</h3>
+        <p>$80</p>
+      </div>
     </div>
   </section>
 
   <!-- Newsletter -->
   <section class="newsletter">
-    <div class="container fade-in">
-      <h3>Stay in the Loop</h3>
-      <form>
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
+    <h3>Stay in the Loop</h3>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-grid">
+    <div class="footer-grid container">
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4>Shop</h4>
         <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Returns</a></li>
-          <li><a href="#">Terms</a></li>
+          <li><a href="#">Womens</a></li>
+          <li><a href="#">Mens</a></li>
+          <li><a href="#">Footwear</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Follow Us</h4>
+        <h4>Company</h4>
         <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">TikTok</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </div>
+    <p class="footer-note">© 2025 Droplets. All rights reserved.</p>
   </footer>
+
   <script>
-  const hamburger = document.getElementById('hamburger');
-  const siteNav = document.getElementById('siteNav');
-
-  hamburger.addEventListener('click', () => {
-    siteNav.classList.toggle('active');
-  });
-</script>
-
+    const hamburger = document.getElementById('hamburger');
+    const siteNav = document.getElementById('siteNav');
+    hamburger.onclick = () => siteNav.classList.toggle('active');
+  </script>
 </body>
 </html>
